@@ -40,3 +40,13 @@ addTaskBtn.addEventListener("click", addTask);
 clearCompletedBtn.addEventListener("click", clearCompletedTasks);
 
 displayTasks();
+
+function clearAllTasks() {
+    // on vide le tableau
+    tasks = [];
+    // on réaffiche (donc liste vide)
+    displayTasks();
+}
+
+const clearAllBtn = document.getElementById("clearAllBtn");
+clearAllBtn.addEventListener("click", clearAllTasks);
